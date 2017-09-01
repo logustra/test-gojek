@@ -1,0 +1,85 @@
+.text-normal {
+  text-transform: normal;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+@include mq(xxsmall) {
+  .text-left-xxs {
+    text-align: left;
+  }
+
+  .text-center-xxs {
+    text-align: center;
+  }
+
+  .text-right-xxs {
+    text-align: right;
+  }
+}
+
+@include mq(xsmall) {
+  .text-left-xs {
+    text-align: left;
+  }
+
+  .text-center-xs {
+    text-align: center;
+  }
+
+  .text-right-xs {
+    text-align: right;
+  }
+}
+
+@include mq(small) {
+  .text-left-sm {
+    text-align: left;
+  }
+
+  .text-center-sm {
+    text-align: center;
+  }
+
+  .text-right-sm {
+    text-align: right;
+  }
+}
+
+@include mq(medium) {
+  .text-left-md {
+    text-align: left;
+  }
+
+  .text-center-md {
+    text-align: center;
+  }
+
+  .text-right-md {
+    text-align: right;
+  }
+}
+
+@include mq(large) {
+  .text-left-lg {
+    text-align: left;
+  }
+
+  .text-center-lg {
+    text-align: center;
+  }
+
+  .text-right-lg {
+    text-align: right;
+  }
+}

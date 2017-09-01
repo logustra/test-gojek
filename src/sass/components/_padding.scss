@@ -1,0 +1,17 @@
+.reset-p {
+  padding: 0 !important;
+}
+
+.reset-p-l {
+  padding-left: 0 !important;
+}
+
+.reset-p-r {
+  padding-right: 0 !important;
+}
+
+@for $i from 1 through 100 {
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+}

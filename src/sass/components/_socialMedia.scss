@@ -1,0 +1,40 @@
+.social-media-inline {
+  display: block;
+  padding: 0 !important;
+  text-align: center;
+  border: 0 !important;
+
+  li {
+
+    a {
+
+      img {
+        max-width: 18px;
+      }
+
+      @include mq(small) {
+        img {
+          max-width: 16px;
+        }
+      }
+
+      @include mq(medium) {
+        img {
+          max-width: 12px;
+        }
+      }
+
+      @include mq(large) {
+        img {
+          max-width: 16px;
+        }
+      }
+    }// a
+  }// li
+}// social-media-inline
+
+@include mq(small) {
+  .social-media-inline {
+    text-align: left;
+  }
+}

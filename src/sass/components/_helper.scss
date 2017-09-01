@@ -1,0 +1,74 @@
+.container {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  @include clearfix;
+  background: $white;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.up-arrow {
+  display: block;
+  content: url("../img/up-arrow.png");
+  float: right;
+  width: 10px;
+  margin-top: 7px;
+}
+
+.down-arrow {
+  display: block;
+  content: url("../img/down-arrow.png");
+  float: right;
+  width: 10px;
+  margin-top: 7px;
+}
+
+.text-title-line {
+
+  h1,h2,h3,h4 {
+    color: $red;
+    letter-spacing: 1.5px;
+
+    &:after {
+      display: block;
+      content: '';
+      height: 2px;
+      width: 50px;
+      background: $red;
+      margin: 20px auto;
+      border-radius: 50px;
+    }
+  }
+}
+
+.list-unstyled {
+  list-style: none;
+
+  li {
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.list-inline {
+
+  li {
+    display: inline;
+    padding: 5px 8px;
+  }
+}

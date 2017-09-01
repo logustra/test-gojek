@@ -1,0 +1,187 @@
+.phone {
+  margin-top: 150px;
+
+  .bg-phone {
+    height: 325px;
+    background: url("../img/bg-phone.png") center center no-repeat;
+    background-size: cover;
+  }// bg-phone
+
+  .img-phone {
+    position: relative;
+    margin-top: -500px;
+
+    img {
+      width: 200px;
+    }
+  }// img-phone
+
+  @include mq(xsmall) {
+    .img-phone {
+
+      img {
+        width: 320px;
+      }
+    }// img-phone
+  }
+
+  @include mq(small) {
+    .img-phone {
+
+      img {
+        width: 370px;
+      }
+    }// img-phone
+  }
+
+  @include mq(large) {
+    .img-phone {
+      position: relative;
+      margin-top: -412px;
+    }// img-phone
+  }
+
+  .phone-content {
+    position: relative;
+    margin-top: -160px;
+
+    img {
+      max-width: 150px;
+    }
+  }// phone-content
+
+  @include mq(xsmall) {
+    .phone-content {
+      margin-top: -270px;
+
+      img {
+        max-width: 270px;
+      }
+    }
+  }
+
+  @include mq(small) {
+    .phone-content {
+      margin-top: -325px;
+
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .phone-text-title {
+    width: 100%;
+    padding: 5px;
+  }// phone-text-title
+
+  @include mq(xxsmall) {
+    .phone-text-title {
+      position: relative;
+    }
+  }
+
+  @include mq(large) {
+    .phone-text-title {
+      background: $white;
+      width: 80%;
+    }
+  }
+
+  .phone-text-slide {
+    position: relative;
+    background: $red;
+    color: $white;
+    font-family: $font2;
+    height: 230px;
+
+
+    .button-bars {
+      position: relative;
+      padding: 180px 35px 0 35px;
+      z-index: 50;
+
+      #prev {
+        width: 25px;
+        float: left;
+      }// prev
+
+      #next {
+        width: 25px;
+        float: right;
+      }// next
+    }// button-bars
+
+    @include mq(xsmall) {
+      .button-bars {
+        padding: 100px 35px 0 35px;
+      }
+    }
+
+    .phone-text-slide-item {
+      position: relative;
+      margin-top: -190px;
+      z-index: 25;
+      padding: 45px 10px 0 10px;
+
+      h1 {
+        font-size: 36px;
+      }// h1
+
+      p {
+        font-size: 14px;
+        letter-spacing: 1.8px
+      }// p
+    }// phone-text-item
+
+    @include mq(xsmall) {
+      .phone-text-slide-item {
+        margin-top: -100px;
+        padding: 45px 80px 0 80px;
+      }
+    }
+
+    @include mq(small) {
+      .phone-text-slide-item {
+        padding: 45px 170px 0 170px;
+      }
+    }
+
+    @include mq(medium) {
+      .phone-text-slide-item {
+        padding: 45px 300px 0 300px;
+      }
+    }
+
+    @include mq(large) {
+      .phone-text-slide-item {
+        padding: 45px 170px 0 170px;
+      }
+    }
+  }// phone-text-slide
+
+  @include mq(large) {
+    .phone-text-slide {
+      margin-left: -11%;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .phone-text-slide {
+      margin-left: -14%;
+
+      .phone-text-slide-item {
+        padding: 45px 200px 0 200px;
+      }
+    }
+  }
+  @media only screen and (min-width: 1366px) {
+    .phone-text-slide {
+      margin-left: -15.5%;
+
+      .phone-text-slide-item {
+        padding: 45px 215px 0 215px;
+      }
+    }
+  }
+}// phone

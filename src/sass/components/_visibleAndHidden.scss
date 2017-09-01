@@ -1,0 +1,49 @@
+@include mq(xxsmall) {
+  .hidden-xxs {
+    display: none;
+  }
+
+  .visible-xxs {
+    display: block;
+  }
+}
+
+@include mq(xsmall) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .visible-xs {
+    display: block;
+  }
+}
+
+@include mq(small) {
+  .hidden-sm {
+    display: none;
+  }
+
+  .visible-sm {
+    display: block;
+  }
+}
+
+@include mq(medium) {
+  .hidden-md {
+    display: none;
+  }
+
+  .visible-md {
+    display: block;
+  }
+}
+
+@include mq(large) {
+  .hidden-lg {
+    display: none;
+  }
+
+  .visible-lg {
+    display: block;
+  }
+}

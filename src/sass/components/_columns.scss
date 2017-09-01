@@ -1,0 +1,64 @@
+@include mq(xxsmall) {
+  @for $i from 1 through 12 {
+
+    .col-xxs-#{$i} {
+      @include clearfix;
+      float: left;
+      display: block;
+      // padding: 0 5px;
+      width: 100% / 12 * $i;
+    }
+  }
+}
+
+@include mq(xsmall) {
+  @for $i from 1 through 12 {
+
+    .col-xs-#{$i} {
+      @include clearfix;
+      float: left;
+      display: block;
+      // padding: 0 5px;
+      width: 100% / 12 * $i;
+    }
+  }
+}
+
+@include mq(small) {
+  @for $i from 1 through 12 {
+
+    .col-sm-#{$i} {
+      @include clearfix;
+      float: left;
+      display: block;
+      // padding: 0 5px;
+      width: 100% / 12 * $i;
+    }
+  }
+}
+
+@include mq(medium) {
+  @for $i from 1 through 12 {
+
+    .col-md-#{$i} {
+      @include clearfix;
+      float: left;
+      display: block;
+      // padding: 0 5px;
+      width: 100% / 12 * $i;
+    }
+  }
+}
+
+@include mq(large) {
+  @for $i from 1 through 12 {
+
+    .col-lg-#{$i} {
+      @include clearfix;
+      float: left;
+      display: block;
+      // padding: 0 5px;
+      width: 100% / 12 * $i;
+    }
+  }
+}
