@@ -1,5 +1,9 @@
 .navbar {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
 
   .container {
 
@@ -22,12 +26,38 @@
     .icon-menu {
       margin-top: 12px;
       float: right;
+      cursor: pointer;
     }
 
-    .col-sm-7 {
+    .navbar-collapse {
+      display: none;
+    }
+
+    @include mq(medium) {
+      .navbar-collapse {
+        display: block !important;
+
+        .list-unstyled {
+          border: 0;
+          margin-top: 0;
+          margin-left: 65px;
+
+          li {
+            margin-right: 20px;
+            display: inline;
+          }
+        }
+      }
+    }
+
+    .col-md-7 {
 
       ul {
-        margin-left: 25px;
+        // margin-left: 25px;
+        padding-top: 15px;
+        padding-left: 0;
+        border-top: 1px solid $black;
+        // display: none;
 
         li {
 
@@ -40,7 +70,9 @@
       }// ul
     }// columns
 
-    .col-sm-3 {
+    .col-md-3 {
+      @include clearfix;
+      text-align: right;
 
       a {
         text-decoration: none;
@@ -48,6 +80,7 @@
         font-size: 14px;
         letter-spacing: 0.9px;
         color: $black;
+        text-align: right !important;
 
         .btn-success {
           border-top-right-radius: 0;
@@ -60,7 +93,7 @@
           border-bottom-left-radius: 0;
           border: 1px solid $green;
           padding: 6px 10px
-        }// btn-default
+        }// btn-default: ;
       }// a
     }// columns
   }// container

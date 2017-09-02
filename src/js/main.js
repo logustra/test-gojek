@@ -50,6 +50,10 @@ phoneTextSlide.find("#next").on("click", function() {
   });
 });
 
+$("#navbar-collapse-toggle").on("click", function() {
+  $(".navbar-collapse").slideToggle();
+});
+
 if ($(window).width() < 992 ) {
   listFooter.find("#gojek").click(function(){
     $(".list-gojek-collapse").slideToggle();
@@ -68,6 +72,4 @@ if ($(window).width() < 992 ) {
     $("#gopay").find("i").toggleClass("down-arrow");
     $("#gopay").find("i").toggleClass("up-arrow");
   });
-} else {
-  listFooter.find("#list-gojek-collapse").removeClass(".list-gojek-collapse");
 }

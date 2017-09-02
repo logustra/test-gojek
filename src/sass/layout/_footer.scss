@@ -140,4 +140,10 @@ footer {
       text-align: left;
     }
   }
+
+  @include mq(medium) {
+    .copyright {
+      text-align: center;
+    }
+  }
 }// footer
